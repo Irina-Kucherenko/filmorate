@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @PutMapping(value = "/user", consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
-    public String updateUser(@Valid @RequestBody  User user) {
+    public String updateUser(@Valid @RequestBody User user) {
         log.info("Обновление пользователя: " + user.getId());
         try {
             return "Пользователь успешно обновлён";
